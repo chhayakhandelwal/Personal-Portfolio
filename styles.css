@@ -31,10 +31,12 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navbar li {
-  display: inline-block;
   margin: 0 10px;
 }
 
@@ -53,6 +55,7 @@ header {
 /* Container */
 .container {
   width: 80%;
+  max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
@@ -78,4 +81,30 @@ footer {
   background: #333;
   color: white;
   margin-top: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  header {
+    padding: 1rem;
+  }
 }
